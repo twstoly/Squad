@@ -1,5 +1,43 @@
 {{#partial "content"}}
     <div class="container">
+        {{#if hero}}
+            <div class="custom-card" >
+                {{#each hero}}
+                    <div class="card-body custom-cards">
+                        <p class="card-text">Name: <b>{{ name }}</b> </p>
+                        <hr>
+                        <h6 class="card-subtitle mb-2 text-muted"> Age: <b>{{ age }}</b></h6>
+                        <hr>
+                        <p class="card-text"> Power: {{ power }} </p>
+                        <hr>
+                        <p class="card-text"> Weakness: <em>{{ weakness }}</em> </p>
+                        <hr>
+                    </div>
+                {{/each}}
+
+                {{#if squadGroup}}
+                    {{name}}
+                    {{#each squadGroup}}
+                        <p>
+                            <i class="fas fa-user-plus"></i>Squad name
+                        </p>
+                        <div>
+                            <p>{{ squad }}</p>
+                            <hr>
+                            <p>{{  size }}</p>
+                            <hr>
+                            <p>{{ task }}</p>
+                            <hr>
+                            <hr>
+                        </div>
+
+                    {{/each}}
+                {{else}}
+                    <p>You dont have a squad</p>
+                {{/if}}
+            </div>
+        {{else}}
+        {{/if}}
 
         <h6><a href="/">Home</a></h6>
         <h6><a href="/squad/new">Check out the Squad</a></h6>
