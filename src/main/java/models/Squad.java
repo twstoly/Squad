@@ -15,6 +15,9 @@ public class Squad {
         instances.add(this);
         this.id = instances.size();
     }
+    public static ArrayList<Squad> getAllInstances() {
+        return instances;
+    }
 
     public String getSquad() {
         return squad;
