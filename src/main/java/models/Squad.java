@@ -12,6 +12,8 @@ public class Squad {
         this.squad = squad;
         this.size = size;
         this.task = task;
+        instances.add(this);
+        this.id = instances.size();
     }
 
 }
