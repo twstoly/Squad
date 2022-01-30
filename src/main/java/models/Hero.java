@@ -21,6 +21,22 @@ public class Hero {
         this.id = instances.size();
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public String getPower() {
+        return power;
+    }
+
+    public String getWeakness() {
+        return weakness;
+    }
+
 }
 
 
