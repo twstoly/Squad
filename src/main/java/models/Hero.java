@@ -17,6 +17,8 @@ public class Hero {
         this.age = age;
         this.power = power;
         this.weakness = weakness;
+        instances.add(this);
+        this.id = instances.size();
     }
 
 }
