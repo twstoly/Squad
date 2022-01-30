@@ -12,6 +12,12 @@ public class Hero {
     private int id;
 
 
+    public Hero(String name, String age, String power, String weakness) {
+        this.name = name;
+        this.age = age;
+        this.power = power;
+        this.weakness = weakness;
+    }
 
 }
 
