@@ -9,9 +9,9 @@ Prerequisites to create a hero in the form section.
 
 | Hero properties  | Squad properties |
 | :----: |:----:|
-| Name | Name |
+| Name | Squad Name |
 | Age | Task |
-| Strength | Hero Member(s) |
+| power | Squad Size |
 | Weakness | |
 | Affiliated Squad | |
 
@@ -49,4 +49,25 @@ Prerequisites to create a hero in the form section.
 No bugs have been encountered yet.
 
 ## License
-MIT License [found here](LICENSE)
+MIT License [found here](LICENSE) @twst 2022.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
