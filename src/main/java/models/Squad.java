@@ -16,6 +16,22 @@ public class Squad {
         this.id = instances.size();
     }
 
+    public String getSquad() {
+        return squad;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public String getTask() {
+        return task;
+    }
+
+    public int getId() {
+        return id;
+    }
+
 }
 
 
