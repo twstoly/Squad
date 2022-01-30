@@ -8,7 +8,11 @@ public class Squad {
     private static ArrayList<Squad> instances = new ArrayList<>();
     private int id;
 
-
+    public Squad(String squad, String size, String task) {
+        this.squad = squad;
+        this.size = size;
+        this.task = task;
+    }
 
 }
 
