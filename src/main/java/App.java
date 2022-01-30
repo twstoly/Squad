@@ -32,6 +32,11 @@ public class App {
             String power = request.queryParams("power");
             String weakness = request.queryParams("weakness");
 
+            String squad = request.queryParams("squad");
+            String task = request.queryParams("task");
+            String size = request.queryParams("size");
+
+            Squad squadGroup = new Squad(squad, size, task);
             Hero hero = new Hero(name, age, power, weakness);
             return new ModelAndView(model, "success.hbs");
         }, new HandlebarsTemplateEngine());
