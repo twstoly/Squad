@@ -8,6 +8,9 @@ public class Hero {
     private String power;
     private String weakness;
 
+    private static ArrayList<Hero> instances = new ArrayList<>();
+    private int id;
+
 
 
 }
