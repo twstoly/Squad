@@ -34,6 +34,9 @@ public class Squad {
     public int getId() {
         return id;
     }
+    public static void clearAllPost(){
+        instances.clear();
+    }
 
 }
 
