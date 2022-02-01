@@ -1,12 +1,60 @@
 {{#partial "content"}}
     <div class="container">
-        {{#if hero}}
-            <div class="custom-card" >
+
+        <h6><b>Heroes Names ~ </b></h6>
+        <div class="custom-card" >
+            <div class="card-body custom-cards">
+                <p class="card-text">Name: <b>Spider Crawl</b> </p>
+                <hr>
+                <h6 class="card-subtitle mb-2 text-muted "> Age: <b class="red">90</b></h6>
+                <hr>
+                <p class="card-text"> Power: Interpreter </p>
+                <hr>
+                <p class="card-text"> Weakness: <em>Women</em> </p>
+                <hr>
+            </div>
+
+
+            <div class="card-body custom-cards">
+                <p class="card-text">Name: <b>Snake Ice</b> </p>
+                <hr>
+                <h6 class="card-subtitle mb-2 text-muted "> Age: <b class="red">20</b></h6>
+                <hr>
+                <p class="card-text"> Power: Slither </p>
+                <hr>
+                <p class="card-text"> Weakness: <em> Wink </em> </p>
+                <hr>
+            </div>
+
+
+            <div class="card-body custom-cards">
+                <p class="card-text">Name: <b>Racoon</b> </p>
+                <hr>
+                <h6 class="card-subtitle mb-2 text-muted "> Age: <b class="red">16</b></h6>
+                <hr>
+                <p class="card-text"> Power: Manipulator </p>
+                <hr>
+                <p class="card-text"> Weakness: <em>Ugliness</em> </p>
+                <hr>
+            </div>
+
+            <div class="card-body custom-cards">
+                <p class="card-text">Name: <b>Trapper</b> </p>
+                <hr>
+                <h6 class="card-subtitle mb-2 text-muted "> Age: <b class="red">117</b></h6>
+                <hr>
+                <p class="card-text"> Power: Best GoalKeeper </p>
+                <hr>
+                <p class="card-text"> Weakness: <em>BackPass</em> </p>
+                <hr>
+            </div>
+
+            {{#if hero}}
                 {{#each hero}}
                     <div class="card-body custom-cards">
                         <p class="card-text">Name: <b>{{ name }}</b> </p>
                         <hr>
-                        <h6 class="card-subtitle mb-2 text-muted"> Age: <b>{{ age }}</b></h6>
+                        <h6 class="card-subtitle mb-2 text-muted "> Age: <b class="red">{{ age }}</b></h6>
                         <hr>
                         <p class="card-text"> Power: {{ power }} </p>
                         <hr>
@@ -14,33 +62,64 @@
                         <hr>
                     </div>
                 {{/each}}
+            {{else}}
+            {{/if}}
+        </div>
 
-                {{#if squadGroup}}
-                    {{name}}
-                    {{#each squadGroup}}
-                        <p>
-                            <i class="fas fa-user-plus"></i>Squad name
-                        </p>
-                        <div>
-                            <p>{{ squad }}</p>
-                            <hr>
-                            <p>{{  size }}</p>
-                            <hr>
-                            <p>{{ task }}</p>
-                            <hr>
-                            <hr>
-                        </div>
 
-                    {{/each}}
-                {{else}}
-                    <p>You dont have a squad</p>
-                {{/if}}
-            </div>
+        <h6><b>Squad Names ~ </b></h6>
+
+    <div class="custom-card" >
+        <div class="card-body custom-cards">
+            <p class="card-text">Squad Name: <b> Crash Team</b> </p>
+            <hr>
+            <h6 class="card-subtitle mb-2 text-muted "> Size Of  The Squad ~ <b class="red"> 5 </b></h6>
+            <hr>
+            <p class="card-text"> <strong class="green">Assigned Task </strong> ~ Clear any moving animal</p>
+            <hr>
+        </div>
+        <div class="card-body custom-cards">
+            <p class="card-text">Squad Name: <b> Intelligence Team</b> </p>
+            <hr>
+            <h6 class="card-subtitle mb-2 text-muted "> Size Of  The Squad ~ <b class="red"> 10 </b></h6>
+            <hr>
+            <p class="card-text"> <strong class="green">Assigned Task </strong> ~ Disrupt Technology</p>
+            <hr>
+        </div>
+        <div class="card-body custom-cards">
+            <p class="card-text">Squad Name: <b> Innovation Team </b> </p>
+            <hr>
+            <h6 class="card-subtitle mb-2 text-muted "> Size Of  The Squad ~ <b class="red"> 2 </b></h6>
+            <hr>
+            <p class="card-text"> <strong class="green">Assigned Task </strong> ~ Make business go out of Business</p>
+            <hr>
+        </div>
+        <div class="card-body custom-cards">
+            <p class="card-text">Squad Name: <b> Design Team </b> </p>
+            <hr>
+            <h6 class="card-subtitle mb-2 text-muted "> Size Of  The Squad ~ <b class="red"> 10 </b></h6>
+            <hr>
+            <p class="card-text"> <strong class="green">Assigned Task </strong> ~ Create Designs that the world would love</p>
+            <hr>
+        </div>
+        {{#if squadGroup}}
+            {{#each squadGroup}}
+                <div class="card-body custom-cards">
+                    <p class="card-text">Squad Name: <b>{{ squad }}</b> </p>
+                    <hr>
+                    <h6 class="card-subtitle mb-2 text-muted "> Size Of  The Squad ~ <b class="red">{{ size }}</b></h6>
+                    <hr>
+                    <p class="card-text"> <strong class="green">Assigned Task </strong>Of The Squad ~ {{ task }} </p>
+                    <hr>
+                </div>
+            {{/each}}
         {{else}}
         {{/if}}
-
-        <h6><a href="/">Home</a></h6>
     </div>
+        <h6><a href="/">Home</a></h6>
+
+    </div>
+
 {{/partial}}
 {{>layout.hbs}}
 
