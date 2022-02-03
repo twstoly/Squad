@@ -1,4 +1,4 @@
-# Squad
+# HSquad
 ##### By TwstOly
 
 ## Description
